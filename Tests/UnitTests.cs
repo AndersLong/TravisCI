@@ -38,8 +38,8 @@ namespace TravisCILab
         public void Subtract_Valid()
         {
             Assert.AreEqual(3, Program.Subtract("4", "1"));
-            Assert.AreEqual(5, Program.Add("7", "2"));
-            Assert.AreEqual(12, Program.Add("14", "2"));
+            Assert.AreEqual(5, Program.Subtract("7", "2"));
+            Assert.AreEqual(12, Program.Subtract("14", "2"));
         }
 
         [Test]
@@ -116,7 +116,7 @@ namespace TravisCILab
         public void Power_Valid()
         {
             Assert.AreEqual(4, Program.Power("2", "2"));
-            Assert.AreEqual(125, Program.Power("5", "2"));
+            Assert.AreEqual(125, Program.Power("5", "3"));
             Assert.AreEqual(3, Program.Power("3", "1"));
         }
 
